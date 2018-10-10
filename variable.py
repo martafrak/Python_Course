@@ -67,25 +67,41 @@ print(text.count("a"))
 
 #LISTS (where cat is 0, dog is 1, fish is 2 etc.)
 list = ["cat", "dog", "fish", "donkey"]
-print(list[2])
+print(list[2]) #we choose second element
+(print(type(list))) #variables types (list)
 print(len(list))
-list.append("chicken")
+list.append("chicken") #we use function
 print(list)
 print(list[1:3])
 #how to delete from list
 list.__delitem__(1) #delete "dog" 'cause is 1 on the list (cat is 0)
 print(list)
-list.remove("cat")
+list.remove("cat") #deleted name
 print(list)
+chicken = list.count("chicken") #how many chickens are in the list
+print(chicken)
+list.extend(["cat","cat"]) #added more elements
+print(list)
+new_list = ["mouse", "horse"]
+list.extend(new_list) #added new list
+print(list)
+list.insert(1,"turtle") #added element - position 1
+print(list)
+list.pop(0) #deleted position 0
+print(list)
+list.clear() #deleted all elements from list
+print(list) #empty
 
 
+#TUPLE (we can not edit, we can not use function)
+animals = ("cat", "dog", "fish", "donkey")
+print(animals)
+print(type(animals))
 
 
+#dictionary (we use keys and we can use functions)
+person = {"years": 25, "name": "Marta"}
+print(person)
+print(type(person)) #dict
 
-
-
-
-
-
-
-
+print(person["name"]) #we choose want we want to see (key)
