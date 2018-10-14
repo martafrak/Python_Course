@@ -66,3 +66,4 @@ def factorial(var):
         F = F * i
     return F
 print(factorial(var))
+
