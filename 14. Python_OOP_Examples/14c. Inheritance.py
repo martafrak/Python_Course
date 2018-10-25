@@ -30,6 +30,18 @@ class Emp2(Employee):
         else:
             self.employees = employees
 
+    def add_emp(self, emp):
+        if emp not in self.employees:
+            self.employees.append(emp)
+
+    def rm_emp(self, emp):
+        if emp in self.employees:
+            self.employees.remove(emp)
+
+    def print_emps(self):
+        for emp in self.employees:
+            print(emp.fullname())
+
 
 em_1 = Employee("Marta","Frak",2000)
 em_2 = Employee("Tom","Example",3000)
@@ -48,6 +60,8 @@ print("Salary - em_3:")
 print(em_3.pay)
 em_3.apply_raise()
 print(em_3.pay)
+
+
 
 
 #print(help(Emp1)) #if we need help and more information about class
