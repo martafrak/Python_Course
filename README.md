@@ -10,7 +10,7 @@
 
 ## General info
 The purpose of the project is learning python. It is 30 days challenge! 
-
+Next part: quality assurance
 ## Technologies
 * Python 3.0
 
@@ -19,7 +19,7 @@ Pycharm 2016.3.2
 
 ## Status
 Project is: _in progress_ 
-Deadline: 9/11/2018
+Deadline: 01/01/2019 
 
 ## Contact
 Created by [@martafrakpl](www.martafrak.pl/) - feel free to contact me!
