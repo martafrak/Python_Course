@@ -3,8 +3,8 @@ from selenium import webdriver
 
 
 class FirstTest(unittest.TestCase): #class inherited from TestCase
-
-    def setUp(self):
+    @classmethod
+    def setUpClass(self):
         self.driver = webdriver.Chrome(executable_path=r'C:\TestFiles\chromedriver.exe')
 
     def test_main_page(self):
@@ -21,5 +21,6 @@ class FirstTest(unittest.TestCase): #class inherited from TestCase
         print(title)
         assert 'My first website' == title
 
-    def tearDown(self):
+    @classmethod
+    def tearDownClass(self):
         self.driver.quit()
